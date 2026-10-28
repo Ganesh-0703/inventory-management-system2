@@ -1,12 +1,8 @@
 # Dependencies
 node_modules/
 .pnpm-store/
-
-# Build artifacts
-dist/
-client/dist/
-server/dist/
-build/
+project.zip
+*.zip
 
 # SQLite databases & logs
 *.sqlite

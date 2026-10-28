@@ -4,8 +4,8 @@
   "description": "Quick-Commerce Store Inventory Management System (Zepto/Blinkit Dark Store OS)",
   "main": "server/dist/index.js",
   "scripts": {
-    "build:client": "npm install --prefix client && npm run build --prefix client",
-    "build:server": "npm install --prefix server && npm run build --prefix server",
+    "build:client": "cd client && npm install --include=dev && npm run build",
+    "build:server": "cd server && npm install --include=dev && npm run build",
     "build": "npm run build:client && npm run build:server",
     "start": "node server/dist/index.js",
     "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
