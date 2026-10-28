@@ -87,3 +87,4 @@ inwardingRouter.post('/', authenticateToken, (req: AuthenticatedRequest, res: Re
     res.status(500).json({ error: err.message || 'Failed to process inwarding GRN' });
   }
 });
+

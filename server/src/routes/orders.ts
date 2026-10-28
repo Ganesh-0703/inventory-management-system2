@@ -305,3 +305,4 @@ ordersRouter.post('/simulate', authenticateToken, (req: AuthenticatedRequest, re
     res.status(500).json({ error: err.message || 'Failed to simulate order' });
   }
 });
+

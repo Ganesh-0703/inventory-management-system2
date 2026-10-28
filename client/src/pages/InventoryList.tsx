@@ -713,3 +713,4 @@ export const InventoryList: React.FC = () => {
     </div>
   );
 };
+

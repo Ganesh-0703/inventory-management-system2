@@ -472,3 +472,4 @@ export const PickingTerminal: React.FC<{ setActiveTab: (tab: string) => void }> 
     </div>
   );
 };
+

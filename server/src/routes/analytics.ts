@@ -94,3 +94,4 @@ analyticsRouter.get('/dashboard', authenticateToken, (req: AuthenticatedRequest,
     res.status(500).json({ error: err.message || 'Failed to fetch dashboard metrics' });
   }
 });
+

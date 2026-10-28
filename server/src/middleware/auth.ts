@@ -49,3 +49,4 @@ export function requireRole(allowedRoles: Array<User['role']>) {
     next();
   };
 }
+

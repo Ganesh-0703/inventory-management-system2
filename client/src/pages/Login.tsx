@@ -180,3 +180,4 @@ export const Login: React.FC<{ onSwitchToRegister: () => void }> = ({ onSwitchTo
     </div>
   );
 };
+

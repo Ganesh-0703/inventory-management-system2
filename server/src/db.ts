@@ -150,7 +150,9 @@ interface DatabaseSchema {
   config: DarkStoreConfig;
 }
 
-const DB_FILE = path.join(process.cwd(), 'server', 'data', 'store.json');
+const DB_FILE = process.cwd().endsWith('server')
+  ? path.join(process.cwd(), 'data', 'store.json')
+  : path.join(process.cwd(), 'server', 'data', 'store.json');
 
 export class Database {
   private data: DatabaseSchema = {
@@ -376,3 +378,4 @@ export class Database {
 }
 
 export const db = new Database();
+

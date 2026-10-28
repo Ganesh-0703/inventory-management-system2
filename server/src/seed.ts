@@ -1005,3 +1005,4 @@ export function runSeed(force = false) {
 if (process.argv[1]?.endsWith('seed.ts') || process.argv[1]?.endsWith('seed.js')) {
   runSeed(true);
 }
+

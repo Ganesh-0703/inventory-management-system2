@@ -35,3 +35,4 @@ staffRouter.patch('/:id/status', authenticateToken, requireRole(['STORE_MANAGER'
     res.status(500).json({ error: err.message || 'Failed to update staff' });
   }
 });
+

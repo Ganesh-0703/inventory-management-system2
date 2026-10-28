@@ -22,3 +22,4 @@ auditRouter.get('/logs', authenticateToken, (req: AuthenticatedRequest, res: Res
     res.status(500).json({ error: err.message || 'Failed to fetch activity logs' });
   }
 });
+

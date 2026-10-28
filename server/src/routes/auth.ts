@@ -169,3 +169,4 @@ authRouter.patch('/me', authenticateToken, (req: AuthenticatedRequest, res: Resp
   const { passwordHash, ...userSafe } = updated;
   res.json({ user: userSafe });
 });
+

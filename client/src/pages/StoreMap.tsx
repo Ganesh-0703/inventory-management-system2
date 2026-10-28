@@ -270,3 +270,4 @@ export const StoreMap: React.FC = () => {
     </div>
   );
 };
+
