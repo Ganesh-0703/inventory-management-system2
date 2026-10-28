@@ -1,0 +1,30 @@
+{
+  "name": "flashstore-inventory-system",
+  "version": "1.0.0",
+  "description": "Quick-Commerce Store Inventory Management System (Zepto/Blinkit Dark Store OS)",
+  "main": "server/dist/index.js",
+  "type": "module",
+  "scripts": {
+    "postinstall": "npm install --prefix server && npm install --prefix client",
+    "build:client": "npm run build --prefix client",
+    "build:server": "npm run build --prefix server",
+    "build": "npm run build:client && npm run build:server",
+    "start": "NODE_ENV=production node server/dist/index.js",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "seed": "npm run seed --prefix server"
+  },
+  "keywords": [
+    "zepto",
+    "blinkit",
+    "dark-store",
+    "inventory-management",
+    "quick-commerce",
+    "fefo",
+    "render-deployment"
+  ],
+  "author": "FlashStore Team",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
