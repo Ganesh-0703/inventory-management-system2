@@ -40,8 +40,8 @@ const MainLayout: React.FC = () => {
     return (
       <div className="min-h-screen bg-slate-950 flex items-center justify-center">
         <div className="flex flex-col items-center gap-3">
-          <div className="w-10 h-10 border-4 border-pink-500 border-t-transparent rounded-full animate-spin" />
-          <span className="text-xs font-mono text-slate-400">Loading FlashStore MFC OS...</span>
+          <div className="w-10 h-10 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin" />
+          <span className="text-xs font-mono text-emerald-400">Loading Ganesh Dark Store OS...</span>
         </div>
       </div>
     );

@@ -38,11 +38,11 @@ export const Register: React.FC<{ onSwitchToLogin: () => void }> = ({ onSwitchTo
     <div className="min-h-screen bg-slate-950 flex flex-col justify-center items-center p-4">
       <div className="w-full max-w-md space-y-6">
         <div className="text-center space-y-2">
-          <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-tr from-pink-600 to-purple-600 shadow-xl shadow-pink-600/30 mb-2">
-            <Zap className="w-6 h-6 text-white fill-white" />
+          <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-tr from-emerald-500 to-teal-600 shadow-xl shadow-emerald-600/30 mb-2">
+            <span className="font-black text-xl text-slate-950 font-mono">G</span>
           </div>
           <h1 className="text-2xl font-black tracking-tight text-slate-100">
-            Onboard New Store Associate
+            Onboard Ganesh Store Crew
           </h1>
           <p className="text-xs text-slate-400">
             Create an authenticated dark store staff account with assigned role
@@ -125,7 +125,7 @@ export const Register: React.FC<{ onSwitchToLogin: () => void }> = ({ onSwitchTo
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="At least 6 characters"
-                  className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-pink-500"
+                  className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-emerald-500"
                 />
               </div>
             </div>
@@ -133,7 +133,7 @@ export const Register: React.FC<{ onSwitchToLogin: () => void }> = ({ onSwitchTo
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-2.5 rounded-xl bg-pink-600 hover:bg-pink-500 text-white font-bold text-xs shadow-lg shadow-pink-600/30 transition active:scale-95 disabled:opacity-50"
+              className="w-full py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:opacity-95 text-slate-950 font-black text-xs shadow-lg shadow-emerald-500/25 transition active:scale-95 disabled:opacity-50"
             >
               {loading ? 'Creating Account...' : 'Complete Staff Onboarding'}
             </button>

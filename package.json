@@ -1,7 +1,7 @@
 {
-  "name": "flashstore-inventory-system",
+  "name": "ganesh-inventory-system",
   "version": "1.0.0",
-  "description": "Quick-Commerce Store Inventory Management System (Zepto/Blinkit Dark Store OS)",
+  "description": "Ganesh Dark Store OS - Quick-Commerce Store Inventory Management System (Zepto/Blinkit Architecture)",
   "main": "server/dist/index.js",
   "scripts": {
     "build:client": "cd client && npm install --include=dev && npm run build",
@@ -12,6 +12,7 @@
     "seed": "npm run seed --prefix server"
   },
   "keywords": [
+    "ganesh",
     "zepto",
     "blinkit",
     "dark-store",
@@ -20,7 +21,7 @@
     "fefo",
     "render-deployment"
   ],
-  "author": "FlashStore Team",
+  "author": "Ganesh Store Team",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",

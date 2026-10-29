@@ -35,7 +35,7 @@ runSeed(false);
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'healthy',
-    system: 'FlashStore Dark Store OS',
+    system: 'Ganesh Dark Store OS',
     version: '1.0.0',
     timestamp: new Date().toISOString()
   });
@@ -67,7 +67,7 @@ if (fs.existsSync(clientDistPath)) {
 
 app.listen(PORT, () => {
   console.log(`=======================================================`);
-  console.log(`⚡ FlashStore Dark Store OS API running on port ${PORT}`);
+  console.log(`⚡ Ganesh Dark Store OS API running on port ${PORT}`);
   console.log(`⚡ Environment: ${process.env.NODE_ENV || 'development'}`);
   console.log(`⚡ Health check: http://localhost:${PORT}/api/health`);
   console.log(`=======================================================`);

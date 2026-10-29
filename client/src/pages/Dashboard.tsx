@@ -27,35 +27,35 @@ export const Dashboard: React.FC<{ setActiveTab: (tab: string) => void }> = ({ s
   return (
     <div className="space-y-6 pb-12">
       {/* Top Welcome & Operations Banner */}
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-purple-900/40 via-slate-900 to-slate-900 border border-purple-500/20 p-6">
-        <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-pink-500/10 to-transparent pointer-events-none" />
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-emerald-950/40 via-slate-900 to-slate-900 border border-emerald-500/20 p-6 shadow-xl">
+        <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-emerald-500/10 to-transparent pointer-events-none" />
         <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
-            <div className="flex items-center gap-2 text-pink-400 text-xs font-bold uppercase tracking-wider mb-1">
-              <span className="flex h-2 w-2 rounded-full bg-pink-500 animate-ping" />
-              Micro-Fulfillment Center Active
+            <div className="flex items-center gap-2 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-1">
+              <span className="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping" />
+              Ganesh Micro-Fulfillment Center • High-Velocity Ops
             </div>
-            <h1 className="text-2xl font-extrabold text-slate-100 tracking-tight">
+            <h1 className="text-2xl sm:text-3xl font-black text-slate-100 tracking-tight">
               Welcome back, {user?.name}
             </h1>
             <p className="text-slate-400 text-xs max-w-xl mt-1">
-              Store <span className="text-slate-200 font-semibold">{metrics?.summary.storeName}</span> is operating at{' '}
-              <span className="text-emerald-400 font-semibold">{metrics?.summary.slaComplianceRate ?? 96.2}%</span> SLA efficiency.
-              Average fulfillment dispatch: <span className="text-emerald-400 font-mono font-semibold">{metrics?.summary.avgPickSeconds ?? 118}s</span>.
+              Hub <span className="text-emerald-300 font-semibold">{metrics?.summary.storeName || 'Ganesh Hub #01'}</span> is running at{' '}
+              <span className="text-emerald-400 font-bold">{metrics?.summary.slaComplianceRate ?? 96.2}%</span> SLA pick speed.
+              Avg dispatch: <span className="text-emerald-300 font-mono font-bold">{metrics?.summary.avgPickSeconds ?? 118}s</span>.
             </p>
           </div>
 
           <div className="flex items-center gap-3">
             <button
               onClick={() => setActiveTab('picking')}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-pink-600 hover:bg-pink-500 text-white font-bold text-xs shadow-lg shadow-pink-600/30 transition active:scale-95"
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:opacity-95 text-slate-950 font-black text-xs shadow-lg shadow-emerald-500/25 transition active:scale-95"
             >
-              <Zap className="w-4 h-4" />
+              <Zap className="w-4 h-4 fill-slate-950" />
               <span>Open 120s Picker ({activeOrders.length})</span>
             </button>
             <button
               onClick={() => setActiveTab('inwarding')}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs border border-slate-700 transition"
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs border border-slate-700 transition active:scale-95"
             >
               <Truck className="w-4 h-4 text-amber-400" />
               <span>Inward GRN</span>
@@ -87,7 +87,7 @@ export const Dashboard: React.FC<{ setActiveTab: (tab: string) => void }> = ({ s
         <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition group">
           <div className="flex items-center justify-between text-slate-400 mb-2">
             <span className="text-xs font-semibold">Avg Pick & Pack Time</span>
-            <div className="p-2 rounded-lg bg-pink-500/10 text-pink-400 border border-pink-500/20">
+            <div className="p-2 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
               <Clock className="w-4 h-4" />
             </div>
           </div>

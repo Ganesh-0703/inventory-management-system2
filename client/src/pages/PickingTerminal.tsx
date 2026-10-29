@@ -81,7 +81,7 @@ export const PickingTerminal: React.FC<{ setActiveTab: (tab: string) => void }> 
       setScanInput('');
       if (res.allPicked) {
         // Open bagging prompt automatically
-        setBagBarcodes([`BAG-BLR04-${Math.floor(1000 + Math.random() * 9000)}`]);
+        setBagBarcodes([`BAG-GANESH-${Math.floor(1000 + Math.random() * 9000)}`]);
         setIsBaggingModalOpen(true);
       }
     } catch (e) {}
@@ -125,17 +125,17 @@ export const PickingTerminal: React.FC<{ setActiveTab: (tab: string) => void }> 
   if (!activeOrder) {
     return (
       <div className="flex flex-col items-center justify-center p-12 text-center rounded-2xl bg-slate-900 border border-slate-800">
-        <div className="p-4 rounded-full bg-pink-500/10 text-pink-400 mb-4 border border-pink-500/20">
+        <div className="p-4 rounded-full bg-emerald-500/10 text-emerald-400 mb-4 border border-emerald-500/20">
           <Zap className="w-10 h-10 animate-bounce-short" />
         </div>
         <h2 className="text-xl font-bold text-slate-100">All Order Queues Clear!</h2>
         <p className="text-slate-400 text-xs max-w-md mt-1 mb-6">
-          There are no pending 10-minute picking orders in Indiranagar Dark Store right now.
-          Generate a realistic customer simulation to test the rapid picking engine!
+          There are no pending 10-minute picking orders in Ganesh Dark Store right now.
+          Generate a realistic customer order to test the rapid picking PDA engine!
         </p>
         <button
           onClick={simulateIncomingOrder}
-          className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-pink-600 hover:bg-pink-500 text-white font-bold text-xs shadow-lg shadow-pink-600/30 transition active:scale-95"
+          className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:opacity-95 text-slate-950 font-black text-xs shadow-lg shadow-emerald-500/25 transition active:scale-95"
         >
           <Sparkles className="w-4 h-4" />
           <span>Simulate Incoming Order</span>

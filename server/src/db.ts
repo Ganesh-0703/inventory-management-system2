@@ -163,8 +163,8 @@ export class Database {
     adjustments: [],
     activityLogs: [],
     config: {
-      storeId: 'DS-BLR-04',
-      storeName: 'Zepto/Blinkit Dark Store #04 (Indiranagar MFC)',
+      storeId: 'DS-BLR-01',
+      storeName: 'Ganesh Dark Store #01 (Indiranagar MFC)',
       location: '100ft Road, Indiranagar, Bengaluru, Karnataka',
       pincode: '560038',
       totalAisles: 6,
