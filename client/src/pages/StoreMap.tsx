@@ -80,8 +80,8 @@ export const StoreMap: React.FC = () => {
         <div>
           <div className="flex items-center gap-2">
             <h1 className="text-xl font-black text-slate-100">Dark Store 2D Layout & Bin Heatmap</h1>
-            <span className="px-2 py-0.5 rounded-full text-xs font-bold bg-purple-500/20 text-purple-300 border border-purple-500/30">
-              Indiranagar MFC #04
+            <span className="px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              Ganesh Hub #01
             </span>
           </div>
           <p className="text-xs text-slate-400 mt-0.5">

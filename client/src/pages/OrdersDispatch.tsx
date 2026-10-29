@@ -58,23 +58,23 @@ export const OrdersDispatch: React.FC = () => {
           <div className="flex items-center gap-2">
             <h1 className="text-xl font-black text-slate-100">Orders & Rider Dispatch Bay</h1>
             <span className="px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-              10-Minute Delivery Dispatch
+              Ganesh 10M Quick Delivery Fleet
             </span>
           </div>
           <p className="text-xs text-slate-400 mt-0.5">
-            Monitor dark store order lifecycle, verify sealed bags & hand over to Zepto/Blinkit delivery fleet
+            Monitor dark store order lifecycle, verify sealed bags & hand over to Ganesh fleet riders
           </p>
         </div>
 
         {/* Filter Pills */}
-        <div className="flex items-center gap-1.5 overflow-x-auto">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0">
           {['ALL', 'RECEIVED', 'PICKING', 'PACKED', 'DISPATCHED'].map((st) => (
             <button
               key={st}
               onClick={() => setFilterStatus(st)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition border ${
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition border active:scale-95 ${
                 filterStatus === st
-                  ? 'bg-pink-600 text-white border-pink-500 shadow-sm'
+                  ? 'bg-gradient-to-r from-emerald-500 to-teal-600 text-slate-950 font-black shadow-md shadow-emerald-500/20'
                   : 'bg-slate-800 text-slate-400 border-slate-700 hover:text-slate-200'
               }`}
             >
@@ -130,9 +130,9 @@ export const OrdersDispatch: React.FC = () => {
                     <button
                       onClick={() => {
                         setDispatchModalOrder(ord);
-                        setRiderName(`Zepto Rider #${Math.floor(10 + Math.random() * 90)}`);
+                        setRiderName(`Ganesh Express Rider #${Math.floor(10 + Math.random() * 90)}`);
                       }}
-                      className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-lg shadow-emerald-600/30 transition active:scale-95 flex items-center gap-1.5"
+                      className="px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:opacity-95 text-slate-950 font-black text-xs shadow-lg shadow-emerald-500/25 transition active:scale-95 flex items-center gap-1.5"
                     >
                       <Bike className="w-4 h-4" />
                       <span>Dispatch to Rider</span>

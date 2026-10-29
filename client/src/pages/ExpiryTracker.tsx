@@ -130,7 +130,7 @@ export const ExpiryTracker: React.FC = () => {
             <CheckCircle2 className="w-10 h-10 text-emerald-400 mx-auto mb-2" />
             <h3 className="font-bold text-slate-100">Zero Critical Expiries!</h3>
             <p className="text-xs text-slate-400 mt-1">
-              All items in Indiranagar Dark Store have healthy shelf life beyond this window.
+              All items in Ganesh Dark Store have healthy shelf life beyond this window.
             </p>
           </div>
         ) : (

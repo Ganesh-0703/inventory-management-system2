@@ -166,7 +166,7 @@ export const Dashboard: React.FC<{ setActiveTab: (tab: string) => void }> = ({ s
       <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2">
-            <Flame className="w-5 h-5 text-pink-500" />
+            <Flame className="w-5 h-5 text-emerald-400" />
             <div>
               <h3 className="font-bold text-sm text-slate-100">Live 10-Minute Order Fulfillment Pipeline</h3>
               <p className="text-xs text-slate-400">Real-time orders moving through dark store stations</p>
@@ -174,7 +174,7 @@ export const Dashboard: React.FC<{ setActiveTab: (tab: string) => void }> = ({ s
           </div>
           <button
             onClick={() => setActiveTab('orders')}
-            className="text-xs font-semibold text-pink-400 hover:text-pink-300 flex items-center gap-1"
+            className="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1"
           >
             <span>View All Orders</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -184,13 +184,13 @@ export const Dashboard: React.FC<{ setActiveTab: (tab: string) => void }> = ({ s
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           <div
             onClick={() => setActiveTab('picking')}
-            className="p-3.5 rounded-xl bg-slate-800/60 border border-slate-700/60 hover:border-pink-500/50 cursor-pointer transition"
+            className="p-3.5 rounded-xl bg-slate-800/60 border border-slate-700/60 hover:border-emerald-500/50 cursor-pointer transition active:scale-98"
           >
             <div className="flex items-center justify-between text-xs text-slate-400">
               <span>1. Order Received</span>
-              <span className="w-2 h-2 rounded-full bg-pink-500 animate-ping" />
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
             </div>
-            <div className="text-2xl font-black text-pink-400 mt-2 font-mono">
+            <div className="text-2xl font-black text-emerald-400 mt-2 font-mono">
               {metrics?.ordersByStatus.RECEIVED ?? 0}
             </div>
             <div className="text-[11px] text-slate-400 mt-1">Waiting for picker claim</div>
@@ -269,7 +269,7 @@ export const Dashboard: React.FC<{ setActiveTab: (tab: string) => void }> = ({ s
                     </div>
                     <div className="w-full bg-slate-700/50 rounded-full h-1.5 overflow-hidden">
                       <div
-                        className="bg-gradient-to-r from-pink-500 to-purple-500 h-full rounded-full"
+                        className="bg-gradient-to-r from-emerald-500 to-teal-400 h-full rounded-full"
                         style={{ width: `${percent}%` }}
                       />
                     </div>
@@ -325,7 +325,7 @@ export const Dashboard: React.FC<{ setActiveTab: (tab: string) => void }> = ({ s
             <span>Dark Store ID: {metrics?.summary.storeId}</span>
             <button
               onClick={() => setActiveTab('audit')}
-              className="text-pink-400 hover:text-pink-300 font-semibold"
+              className="text-emerald-400 hover:text-emerald-300 font-semibold"
             >
               Full Audit Log →
             </button>

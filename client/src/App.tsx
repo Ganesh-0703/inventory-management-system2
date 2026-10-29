@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { Sidebar } from './components/Sidebar';
 import { ToastContainer } from './components/ToastContainer';
 import { QuickScannerModal } from './components/QuickScannerModal';
+import { MobileBottomNav } from './components/MobileBottomNav';
 
 import { Dashboard } from './pages/Dashboard';
 import { PickingTerminal } from './pages/PickingTerminal';
@@ -87,12 +88,15 @@ const MainLayout: React.FC = () => {
       <div className="flex-1 flex overflow-hidden">
         <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
 
-        <main className="flex-1 overflow-y-auto px-4 sm:px-6 py-6 bg-slate-950">
+        <main className="flex-1 overflow-y-auto px-3 sm:px-6 py-4 sm:py-6 bg-slate-950 pb-24 md:pb-8">
           <div className="max-w-7xl mx-auto">
             {renderActivePage()}
           </div>
         </main>
       </div>
+
+      {/* Native Mobile Bottom App Bar (runs like Flipkart/Amazon on mobile & tabs) */}
+      <MobileBottomNav activeTab={activeTab} setActiveTab={setActiveTab} />
 
       <QuickScannerModal />
       <ToastContainer />
